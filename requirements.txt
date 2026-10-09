@@ -4,4 +4,4 @@ scipy
 statsmodels
 plotly
 streamlit
-jupyterlab
+ipykernel
