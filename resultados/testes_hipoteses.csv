@@ -1,0 +1,3 @@
+variavel,estimativa,erro_padrao,estatistica_t,p_valor,ic_inferior,ic_superior,graus_liberdade,metodo,nivel_confianca,significancia,inicio,fim,dias
+workingday,23.81209074485823,93.67555786157058,0.2541974799877535,0.7994412160701779,-160.20727864866637,207.83146013838285,532.0,HAC Bartlett; 7 defasagens; correção amostral; t aproximada,0.95,0.05,2011-01-01,2012-06-30,547
+temp,3682.753092337392,748.4541640523468,4.920479127803771,1.152939685406532e-06,2212.4649357149183,5153.041248959866,532.0,HAC Bartlett; 7 defasagens; correção amostral; t aproximada,0.95,0.05,2011-01-01,2012-06-30,547

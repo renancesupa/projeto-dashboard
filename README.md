@@ -2,7 +2,38 @@
 
 Projeto acadêmico desenvolvido por duas pessoas, com entrega prevista para **13 de outubro de 2026 (terça-feira)**.
 
-Este README registra o escopo inicial e orienta a divisão do trabalho. As hipóteses abaixo são perguntas a investigar; ainda não representam resultados ou conclusões.
+Este README reúne o escopo e as instruções de execução. O notebook implementa preparação, descrição, regressões, diagnóstico, testes HAC, previsões e avaliação; o dashboard consome os resultados exportados. O cronograma original foi mantido como registro do planejamento.
+
+## Instalação e execução
+
+Ambiente validado: Python 3.14.6. Execute os comandos a partir da raiz do repositório.
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python scripts/executar_notebook.py
+python -m streamlit run dashboard/app.py
+```
+
+O script executa o notebook inteiro em um kernel limpo com o Python do ambiente ativo, salva as saídas e regenera:
+
+- `dados/tratados/day_tratado.csv`: 731 dias, separador `;`.
+- `resultados/previsoes.csv`: previsões pontuais e observados nos 184 dias de julho a dezembro de 2012.
+- `resultados/metricas_modelos.csv`: MAE, RMSE e R² no teste para regressão simples, múltipla e referência igual à média do treino.
+- `resultados/testes_hipoteses.csv`: estimativas, erros padrão HAC, IC de 95%, valores-p e graus de liberdade dos dois coeficientes.
+
+Também é possível abrir `notebooks/analise_bicicletas.ipynb` no Jupyter ou VS Code e executar todas as células em ordem. A leitura funciona com diretório de trabalho na raiz ou em `notebooks/`. Os dados brutos não são modificados.
+
+Os filtros do dashboard alteram os gráficos e a tabela descritiva. O gráfico de previsões e as métricas preservam o teste completo; os testes estatísticos preservam o treino. A interface identifica esses períodos e não antecipa conclusões.
+
+Validação automatizada, após gerar os resultados:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+Os testes verificam a auditoria, a separação temporal, as preditoras, o cálculo das métricas, a inferência HAC e o funcionamento dos filtros e estados vazios do dashboard.
 
 ## Objetivo e pergunta central
 
@@ -143,7 +174,7 @@ projeto/
 │   │   ├── day.csv
 │   │   └── Readme.txt
 │   └── tratados/
-│       └── bicicletas_diario.csv
+│       └── day_tratado.csv
 ├── notebooks/
 │   └── analise_bicicletas.ipynb
 ├── dashboard/
@@ -159,21 +190,22 @@ projeto/
 
 **Fluxo:** dados brutos → notebook → dados tratados e resultados → dashboard.
 
-Essa estrutura é o destino planejado, não uma lista de arquivos já implementados. Na preparação inicial, a base foi baixada para `dados/bike_sharing/`; ao organizar o repositório, colocar os originais em `dados/brutos/` e ajustar os caminhos de leitura.
+Os arquivos de execução implementados estão descritos acima. `Readme.txt`, figuras exportadas e roteiro de defesa são itens previstos nesta estrutura que não foram adicionados nesta etapa. A atribuição e o significado das variáveis utilizadas estão documentados neste README e no notebook.
 
-## Ferramentas e decisões pendentes
+## Ferramentas e decisões adotadas
 
 Os integrantes já possuem conhecimento em Python, pandas e SciPy. Python será utilizado no notebook.
 
-Ainda precisam ser definidos:
+- Regressão: statsmodels; dashboard: Streamlit e Plotly.
+- Modelo simples: `cnt ~ temp`.
+- Modelo múltiplo: `cnt ~ temp + workingday + C(mnth) + t_anos`, com janeiro como mês de referência.
+- Treino: até 30/06/2012, 547 dias; teste: 01/07 a 31/12/2012, 184 dias.
+- Referência preditiva: média de `cnt` no treino, sem usar contagens futuras.
+- Testes bilaterais exploratórios dos coeficientes de `workingday` e `temp`; significância de 5% e IC de 95%.
+- Covariância HAC/Bartlett com sete defasagens e correção amostral; distribuição t aproximada com 532 graus de liberdade residuais. [Referência da implementação](https://www.statsmodels.org/stable/generated/statsmodels.regression.linear_model.RegressionResults.get_robustcov_results.html).
+- Previsões condicionais ao clima observado no teste; uso antecipado exige previsão meteorológica ou cenário.
 
-- Biblioteca de regressão e ferramenta do dashboard.
-- Preditoras finais e codificação das categorias.
-- Data de corte para treino e teste.
-- Testes, nível de significância e método dos intervalos de confiança.
-- Instruções de instalação e execução, a registrar aqui quando a implementação estiver pronta.
-
-O arquivo `requirements.txt` deverá listar as dependências utilizadas. Não há comandos de execução definidos nesta etapa.
+As interpretações e limitações dos resultados ficam no notebook. A preparação para a defesa individual permanece uma responsabilidade dos dois integrantes.
 
 ## Entregáveis e avaliação
 
@@ -185,14 +217,14 @@ O arquivo `requirements.txt` deverá listar as dependências utilizadas. Não h�
 
 ## Checklist de conclusão
 
-- [ ] Fonte e significado das variáveis documentados.
-- [ ] Auditoria e preparação dos dados justificadas.
-- [ ] Gráficos descritivos com perguntas claras.
-- [ ] Hipóteses, testes e intervalos de confiança apresentados e interpretados.
-- [ ] Regressão implementada, interpretada e avaliada em dados posteriores ao treino.
-- [ ] Previsões comparadas com uma referência simples.
-- [ ] Recomendações fundamentadas e limitações discutidas.
-- [ ] Dashboard interativo integrado aos resultados.
-- [ ] Notebook executado do início ao fim, com código sem comentários.
-- [ ] Dependências e instruções de execução registradas.
+- [x] Fonte e significado das variáveis documentados.
+- [x] Auditoria e preparação dos dados justificadas.
+- [x] Gráficos descritivos com perguntas claras.
+- [x] Hipóteses, testes e intervalos de confiança apresentados e interpretados.
+- [x] Regressão implementada, interpretada e avaliada em dados posteriores ao treino.
+- [x] Previsões comparadas com uma referência simples.
+- [x] Recomendações fundamentadas e limitações discutidas.
+- [x] Dashboard interativo integrado aos resultados.
+- [x] Notebook executado do início ao fim, com código sem comentários.
+- [x] Dependências e instruções de execução registradas.
 - [ ] Ambos preparados para a defesa individual.

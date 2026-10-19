@@ -1,0 +1,2051 @@
+{
+  "version": 1,
+  "artifact": {
+    "identity": "projeto-dashboard",
+    "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+    "view": "Notebook integral; três seções do dashboard; estados padrão, janeiro útil, dia isolado, seleção vazia e data incompleta"
+  },
+  "categories": [
+    {
+      "id": "usefulness",
+      "label": "Utilidade e completude",
+      "applicable": true,
+      "assessment": "O mínimo definido no roadmap está presente: descrição, comparação das previsões, métricas e inferência."
+    },
+    {
+      "id": "clarity",
+      "label": "Clareza analítica",
+      "applicable": true,
+      "assessment": "Períodos, unidades e método identificados. Permanece divergência entre o escopo e a data do README inicial e o roadmap mínimo."
+    },
+    {
+      "id": "visual",
+      "label": "Consistência visual e interação",
+      "applicable": true,
+      "assessment": "Valores e estados conferidos por AppTest. Inspeção visual parcial: tela inicial em 512 px e após fechar a emulação; seções inferiores e desktop completo não concluídos por noWindowsAvailable."
+    },
+    {
+      "id": "authority",
+      "label": "Autoridade e confiança da fonte",
+      "applicable": true,
+      "assessment": "day.csv é idêntico, byte a byte, ao arquivo oficial da UCI; cálculos associados têm evidência reproduzível."
+    },
+    {
+      "id": "accuracy",
+      "label": "Exatidão dos valores",
+      "applicable": true,
+      "assessment": "Recalculo independente com matriz manual OLS/HAC, dados e metadados reconciliados; valor-p pequeno agora preservado na tabela do notebook."
+    },
+    {
+      "id": "within",
+      "label": "Concordância em cada gráfico",
+      "applicable": true,
+      "assessment": "Todos os valores dos sete gráficos salvos no notebook e dos três gráficos do dashboard conferidos contra dados e cálculos independentes; não equivale a aceitação visual completa."
+    },
+    {
+      "id": "sources",
+      "label": "Detalhamento das fontes",
+      "applicable": true,
+      "assessment": "Bindings de sete gráficos do notebook e seis componentes do dashboard recuperáveis em código, CSVs, fonte e definições; sem consulta SQL."
+    },
+    {
+      "id": "cross",
+      "label": "Consistência entre artefatos",
+      "applicable": true,
+      "assessment": "Descrição, previsões, métricas e hipóteses reconciliadas entre notebook, CSVs e painel."
+    },
+    {
+      "id": "quality",
+      "label": "Controles de qualidade dos dados",
+      "applicable": true,
+      "assessment": "Bruto, tratado, previsões, métricas e hipóteses: datas, domínios, ausência de duplicatas/ausências, contagens, calendário, período e consistência validados."
+    },
+    {
+      "id": "conclusions",
+      "label": "Suporte às conclusões",
+      "applicable": true,
+      "assessment": "Sete interpretações/recomendações verificadas; superioridade do múltiplo limitada à janela histórica. Sem inferência causal ou promessa operacional."
+    }
+  ],
+  "units": [
+    {
+      "id": "notebook-fig-0",
+      "label": "Demanda diária por bicicletas - 2011-2012",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "within": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "sources": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "../../notebooks/analise_bicicletas.ipynb"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-fig-1",
+      "label": "Temperatura e demanda diária  - 2011-2012",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "within": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "sources": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "../../notebooks/analise_bicicletas.ipynb"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-fig-2",
+      "label": "Temperatura e regressão simples · treino até jun/2012",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "within": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "sources": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "../../notebooks/analise_bicicletas.ipynb"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-fig-3",
+      "label": "Regressão múltipla · valores no treino até jun/2012",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "within": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "sources": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "../../notebooks/analise_bicicletas.ipynb"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-fig-4",
+      "label": "Resíduos e valores ajustados · treino",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "within": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "sources": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "../../notebooks/analise_bicicletas.ipynb"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-fig-5",
+      "label": "Autocorrelação dos resíduos · treino",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "within": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "sources": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "../../notebooks/analise_bicicletas.ipynb"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-fig-6",
+      "label": "Observado e previsto · jul–dez/2012 (184 dias)",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "within": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "sources": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "../../notebooks/analise_bicicletas.ipynb"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-table-7",
+      "label": "Auditoria",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-numeros.json",
+                "2026-10-19-relatorio.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-table-8",
+      "label": "Resumo de demanda",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-numeros.json",
+                "2026-10-19-relatorio.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-table-9",
+      "label": "Comparação por tipo de dia",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-numeros.json",
+                "2026-10-19-relatorio.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-table-10",
+      "label": "Separação temporal",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-numeros.json",
+                "2026-10-19-relatorio.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-table-11",
+      "label": "Coeficientes simples",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-numeros.json",
+                "2026-10-19-relatorio.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-table-12",
+      "label": "Coeficientes múltiplos",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-numeros.json",
+                "2026-10-19-relatorio.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-table-13",
+      "label": "Hipóteses HAC",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-numeros.json",
+                "2026-10-19-relatorio.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": [
+            {
+              "id": "valor-p-arredondado",
+              "status": "fixed",
+              "checkIds": [
+                "verificacao"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "notebook-table-14",
+      "label": "Métricas no teste",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-numeros.json",
+                "2026-10-19-relatorio.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "dashboard-component-0",
+      "label": "Demanda diária",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "sources": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../dashboard/app.py",
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "within": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "visual": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-relatorio.md#limites-da-inspecao"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "dashboard-component-1",
+      "label": "Dispersão temperatura/demanda",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "sources": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../dashboard/app.py",
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "within": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "visual": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "unverified",
+              "evidence": [],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "dashboard-component-2",
+      "label": "Observado versus previsto",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "sources": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../dashboard/app.py",
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "within": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "visual": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "unverified",
+              "evidence": [],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "dashboard-component-3",
+      "label": "Tabela por tipo de dia",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "sources": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../dashboard/app.py",
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "visual": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "unverified",
+              "evidence": [],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "dashboard-component-4",
+      "label": "Tabela de métricas",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "sources": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../dashboard/app.py",
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "visual": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "unverified",
+              "evidence": [],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "dashboard-component-5",
+      "label": "Tabela de hipóteses",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "authority": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "accuracy": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "sources": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../dashboard/app.py",
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "visual": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "unverified",
+              "evidence": [],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "dashboard-control-0",
+      "label": "Filtro de período",
+      "kind": "control",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "visual": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "unverified",
+              "evidence": [],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "quality": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "dashboard-control-1",
+      "label": "Filtro de tipo de dia",
+      "kind": "control",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "visual": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "unverified",
+              "evidence": [],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        },
+        "quality": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "data-0",
+      "label": "Dados brutos",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "quality": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "data-1",
+      "label": "Dados tratados",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "quality": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "data-2",
+      "label": "Previsões exportadas",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "quality": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "data-3",
+      "label": "Métricas exportadas",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "quality": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "data-4",
+      "label": "Hipóteses exportadas",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "quality": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-fonte-uci.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "cross-0",
+      "label": "Descrição",
+      "kind": "comparison",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "cross": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "cross-1",
+      "label": "Previsões",
+      "kind": "comparison",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "cross": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "cross-2",
+      "label": "Métricas",
+      "kind": "comparison",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "cross": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "cross-3",
+      "label": "Hipóteses",
+      "kind": "comparison",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "cross": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "claim-0",
+      "label": "Evolução temporal",
+      "kind": "claim",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "conclusions": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-metodologia.md",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "claim-1",
+      "label": "Relação temperatura/demanda",
+      "kind": "claim",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "conclusions": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-metodologia.md",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "claim-2",
+      "label": "Associação ajustada de workingday",
+      "kind": "claim",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "conclusions": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-metodologia.md",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "claim-3",
+      "label": "Associação ajustada de temp",
+      "kind": "claim",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "conclusions": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-metodologia.md",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "claim-4",
+      "label": "Desempenho no teste",
+      "kind": "claim",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "conclusions": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-metodologia.md",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "claim-5",
+      "label": "Recomendação de planejamento",
+      "kind": "claim",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "conclusions": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-metodologia.md",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "claim-6",
+      "label": "Recomendação de cenários",
+      "kind": "claim",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "conclusions": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-metodologia.md",
+                "2026-10-19-numeros.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-section-1",
+      "label": "Notebook seção 1",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "clarity": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../notebooks/analise_bicicletas.ipynb",
+                "2026-10-19-metodologia.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-section-2",
+      "label": "Notebook seção 2",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "clarity": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../notebooks/analise_bicicletas.ipynb",
+                "2026-10-19-metodologia.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-section-3",
+      "label": "Notebook seção 3",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "clarity": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../notebooks/analise_bicicletas.ipynb",
+                "2026-10-19-metodologia.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-section-4",
+      "label": "Notebook seção 4",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "clarity": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../notebooks/analise_bicicletas.ipynb",
+                "2026-10-19-metodologia.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-section-5",
+      "label": "Notebook seção 5",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "clarity": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../notebooks/analise_bicicletas.ipynb",
+                "2026-10-19-metodologia.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-section-6",
+      "label": "Notebook seção 6",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "clarity": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../notebooks/analise_bicicletas.ipynb",
+                "2026-10-19-metodologia.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-section-7",
+      "label": "Notebook seção 7",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "clarity": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../notebooks/analise_bicicletas.ipynb",
+                "2026-10-19-metodologia.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-section-8",
+      "label": "Notebook seção 8",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "clarity": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../notebooks/analise_bicicletas.ipynb",
+                "2026-10-19-metodologia.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-section-9",
+      "label": "Notebook seção 9",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "clarity": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../notebooks/analise_bicicletas.ipynb",
+                "2026-10-19-metodologia.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-section-10",
+      "label": "Notebook seção 10",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "clarity": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../notebooks/analise_bicicletas.ipynb",
+                "2026-10-19-metodologia.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "notebook-section-11",
+      "label": "Notebook seção 11",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "clarity": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../notebooks/analise_bicicletas.ipynb",
+                "2026-10-19-metodologia.md"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "dashboard-section-0",
+      "label": "Exploração descritiva",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "clarity": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../dashboard/app.py",
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "dashboard-section-1",
+      "label": "Avaliação das previsões",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "clarity": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../dashboard/app.py",
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "dashboard-section-2",
+      "label": "Testes e intervalos",
+      "kind": "component",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "clarity": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "../../dashboard/app.py",
+                "2026-10-19-componentes.json"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "documentation-scope",
+      "label": "Escopo e cronograma dos READMEs",
+      "kind": "comparison",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "clarity": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "failed",
+              "evidence": [
+                "../../README.md",
+                "../../README-2.MD"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": [
+            {
+              "id": "escopo-cronograma-divergentes",
+              "status": "open",
+              "checkIds": [
+                "verificacao"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "question-0",
+      "label": "Explorar evolução temporal",
+      "kind": "question",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "usefulness": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "../../README-2.MD"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "question-1",
+      "label": "Examinar temperatura e tipo de dia",
+      "kind": "question",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "usefulness": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "../../README-2.MD"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "question-2",
+      "label": "Comparar previsão e referência",
+      "kind": "question",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "usefulness": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "../../README-2.MD"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    },
+    {
+      "id": "question-3",
+      "label": "Consultar magnitude e incerteza das associações",
+      "kind": "question",
+      "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc",
+      "categories": {
+        "usefulness": {
+          "checks": [
+            {
+              "id": "verificacao",
+              "state": "passed",
+              "evidence": [
+                "2026-10-19-componentes.json",
+                "../../README-2.MD"
+              ],
+              "revision": "1bd65eb4b35534f45ca376883feee2e61c307afa8f84078f2278f7b1525536dc"
+            }
+          ],
+          "findings": []
+        }
+      }
+    }
+  ]
+}

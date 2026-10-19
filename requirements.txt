@@ -5,3 +5,5 @@ statsmodels
 plotly
 streamlit
 ipykernel
+nbformat
+nbclient
