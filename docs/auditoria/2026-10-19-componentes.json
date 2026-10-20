@@ -1,0 +1,60 @@
+{
+  "notebook_figures": [
+    {
+      "title": "Demanda diária por bicicletas - 2011-2012",
+      "status": "passed; all plotted values match independent raw-data recomputation"
+    },
+    {
+      "title": "Temperatura e demanda diária  - 2011-2012",
+      "status": "passed; all plotted values match independent raw-data recomputation"
+    },
+    {
+      "title": "Temperatura e regressão simples · treino até jun/2012",
+      "status": "passed; all plotted values match independent raw-data recomputation"
+    },
+    {
+      "title": "Regressão múltipla · valores no treino até jun/2012",
+      "status": "passed; all plotted values match independent raw-data recomputation"
+    },
+    {
+      "title": "Resíduos e valores ajustados · treino",
+      "status": "passed; all plotted values match independent raw-data recomputation"
+    },
+    {
+      "title": "Autocorrelação dos resíduos · treino",
+      "status": "passed; all plotted values match independent raw-data recomputation"
+    },
+    {
+      "title": "Observado e previsto · jul–dez/2012 (184 dias)",
+      "status": "passed; all plotted values match independent raw-data recomputation"
+    }
+  ],
+  "dashboard_states": [
+    {
+      "state": "serie_completa",
+      "status": "passed; values and chart data checked, not just element presence"
+    },
+    {
+      "state": "janeiro_dias_uteis",
+      "status": "passed; values and chart data checked, not just element presence"
+    },
+    {
+      "state": "um_dia_nao_util",
+      "status": "passed; values and chart data checked, not just element presence"
+    },
+    {
+      "state": "sem_resultados",
+      "status": "passed; values and chart data checked, not just element presence"
+    },
+    {
+      "state": "sem_tipo_dia",
+      "status": "passed; values and chart data checked, not just element presence"
+    },
+    {
+      "state": "data_incompleta",
+      "status": "passed; values and chart data checked, not just element presence"
+    }
+  ],
+  "errors": [],
+  "visual_limit": "Native Chrome screenshot inspected at 512px and after closing emulation; full desktop and lower-section visual inspection interrupted by noWindowsAvailable. Runtime control and chart data checks completed via AppTest."
+}

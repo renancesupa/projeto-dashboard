@@ -1,0 +1,559 @@
+{
+  "method": "numpy.linalg.lstsq; manually assembled design; manual HAC Bartlett(7), correction n/(n-k); t p-values from incomplete beta; t critical from root finding",
+  "checks": {
+    "raw_shape": {
+      "pass": true,
+      "detail": [
+        731,
+        16
+      ]
+    },
+    "raw_dates_complete": {
+      "pass": true,
+      "detail": null
+    },
+    "raw_no_missing": {
+      "pass": true,
+      "detail": null
+    },
+    "raw_no_duplicates": {
+      "pass": true,
+      "detail": null
+    },
+    "raw_instant": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "raw_month_dates": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "raw_year_dates": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "raw_weekday_dates": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "raw_workingday_logic": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "raw_total_counts": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "raw_nonnegative_counts": {
+      "pass": true,
+      "detail": null
+    },
+    "raw_normalized_temp": {
+      "pass": true,
+      "detail": null
+    },
+    "raw_normalized_atemp": {
+      "pass": true,
+      "detail": null
+    },
+    "raw_normalized_hum": {
+      "pass": true,
+      "detail": null
+    },
+    "raw_normalized_windspeed": {
+      "pass": true,
+      "detail": null
+    },
+    "raw_domain_season": {
+      "pass": true,
+      "detail": null
+    },
+    "raw_domain_yr": {
+      "pass": true,
+      "detail": null
+    },
+    "raw_domain_mnth": {
+      "pass": true,
+      "detail": null
+    },
+    "raw_domain_holiday": {
+      "pass": true,
+      "detail": null
+    },
+    "raw_domain_weekday": {
+      "pass": true,
+      "detail": null
+    },
+    "raw_domain_workingday": {
+      "pass": true,
+      "detail": null
+    },
+    "raw_domain_weathersit": {
+      "pass": true,
+      "detail": null
+    },
+    "treated_shape": {
+      "pass": true,
+      "detail": [
+        731,
+        18
+      ]
+    },
+    "treated_instant": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "treated_dteday": {
+      "pass": true,
+      "detail": null
+    },
+    "treated_season": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "treated_yr": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "treated_mnth": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "treated_holiday": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "treated_weekday": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "treated_workingday": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "treated_weathersit": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "treated_temp": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "treated_atemp": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "treated_hum": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "treated_windspeed": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "treated_casual": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "treated_registered": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "treated_cnt": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "treated_tipo_dia": {
+      "pass": true,
+      "detail": null
+    },
+    "treated_t_anos": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 2.220446049250313e-16
+      }
+    },
+    "split_sizes": {
+      "pass": true,
+      "detail": null
+    },
+    "design_full_rank": {
+      "pass": true,
+      "detail": {
+        "n": 547,
+        "k": 15,
+        "rank": 15
+      }
+    },
+    "hypothesis_rows": {
+      "pass": true,
+      "detail": null
+    },
+    "hypotheses_variavel": {
+      "pass": true,
+      "detail": null
+    },
+    "hypotheses_estimativa": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 2.4797941478027496e-12
+      }
+    },
+    "hypotheses_erro_padrao": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 2.205524651799351e-11
+      }
+    },
+    "hypotheses_estatistica_t": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 1.4654943925052066e-13
+      }
+    },
+    "hypotheses_p_valor": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 4.1300296516055823e-14
+      }
+    },
+    "hypotheses_ic_inferior": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 3.1377567211166024e-11
+      }
+    },
+    "hypotheses_ic_superior": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 2.9103830456733704e-11
+      }
+    },
+    "hypotheses_graus_liberdade": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "hypotheses_metodo": {
+      "pass": true,
+      "detail": null
+    },
+    "hypotheses_nivel_confianca": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "hypotheses_significancia": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "hypotheses_inicio": {
+      "pass": true,
+      "detail": null
+    },
+    "hypotheses_fim": {
+      "pass": true,
+      "detail": null
+    },
+    "hypotheses_dias": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "prediction_shape": {
+      "pass": true,
+      "detail": [
+        184,
+        8
+      ]
+    },
+    "predictions_dteday": {
+      "pass": true,
+      "detail": null
+    },
+    "predictions_cnt": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "predictions_workingday": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "predictions_temp": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "predictions_tipo_dia": {
+      "pass": true,
+      "detail": null
+    },
+    "predictions_previsto_simples": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 2.7284841053187847e-12
+      }
+    },
+    "predictions_previsto_multiplo": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 6.366462912410498e-12
+      }
+    },
+    "predictions_previsto_referencia": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "metric_shape": {
+      "pass": true,
+      "detail": [
+        3,
+        8
+      ]
+    },
+    "metrics_modelo": {
+      "pass": true,
+      "detail": null
+    },
+    "metrics_mae": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 1.3642420526593924e-12
+      }
+    },
+    "metrics_rmse": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 1.3642420526593924e-12
+      }
+    },
+    "metrics_r2": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 2.220446049250313e-15
+      }
+    },
+    "metrics_inicio": {
+      "pass": true,
+      "detail": null
+    },
+    "metrics_fim": {
+      "pass": true,
+      "detail": null
+    },
+    "metrics_dias": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    },
+    "metrics_previsoes_negativas": {
+      "pass": true,
+      "detail": {
+        "max_abs_difference": 0.0
+      }
+    }
+  },
+  "differences": {
+    "raw_instant": 0.0,
+    "raw_month_dates": 0.0,
+    "raw_year_dates": 0.0,
+    "raw_weekday_dates": 0.0,
+    "raw_workingday_logic": 0.0,
+    "raw_total_counts": 0.0,
+    "treated_instant": 0.0,
+    "treated_season": 0.0,
+    "treated_yr": 0.0,
+    "treated_mnth": 0.0,
+    "treated_holiday": 0.0,
+    "treated_weekday": 0.0,
+    "treated_workingday": 0.0,
+    "treated_weathersit": 0.0,
+    "treated_temp": 0.0,
+    "treated_atemp": 0.0,
+    "treated_hum": 0.0,
+    "treated_windspeed": 0.0,
+    "treated_casual": 0.0,
+    "treated_registered": 0.0,
+    "treated_cnt": 0.0,
+    "treated_t_anos": 2.220446049250313e-16,
+    "hypotheses_estimativa": 2.4797941478027496e-12,
+    "hypotheses_erro_padrao": 2.205524651799351e-11,
+    "hypotheses_estatistica_t": 1.4654943925052066e-13,
+    "hypotheses_p_valor": 4.1300296516055823e-14,
+    "hypotheses_ic_inferior": 3.1377567211166024e-11,
+    "hypotheses_ic_superior": 2.9103830456733704e-11,
+    "hypotheses_graus_liberdade": 0.0,
+    "hypotheses_nivel_confianca": 0.0,
+    "hypotheses_significancia": 0.0,
+    "hypotheses_dias": 0.0,
+    "predictions_cnt": 0.0,
+    "predictions_workingday": 0.0,
+    "predictions_temp": 0.0,
+    "predictions_previsto_simples": 2.7284841053187847e-12,
+    "predictions_previsto_multiplo": 6.366462912410498e-12,
+    "predictions_previsto_referencia": 0.0,
+    "metrics_mae": 1.3642420526593924e-12,
+    "metrics_rmse": 1.3642420526593924e-12,
+    "metrics_r2": 2.220446049250313e-15,
+    "metrics_dias": 0.0,
+    "metrics_previsoes_negativas": 0.0
+  },
+  "errors": [],
+  "coefficients": {
+    "simple": {
+      "intercept": 1054.56608360081,
+      "temp": 6109.261558693086
+    },
+    "multiple": {
+      "intercept": 157.18598046050042,
+      "temp": 3682.753092337391,
+      "workingday": 23.81209074485575,
+      "month_2": 57.75316288483502,
+      "month_3": 605.1639481163542,
+      "month_4": 931.6087307592002,
+      "month_5": 1161.2631961450058,
+      "month_6": 1079.4662572761767,
+      "month_7": 468.7726279145925,
+      "month_8": 334.5973093115232,
+      "month_9": 339.06655716568366,
+      "month_10": 428.6640777252592,
+      "month_11": -76.38892623742504,
+      "month_12": -556.1680689651369,
+      "t_anos": 2095.3800537911666
+    }
+  },
+  "hypotheses_recomputed": [
+    {
+      "variavel": "workingday",
+      "estimativa": 23.81209074485575,
+      "erro_padrao": 93.67555786157055,
+      "estatistica_t": 0.25419747998772707,
+      "p_valor": 0.7994412160701366,
+      "ic_inferior": -160.20727864866723,
+      "ic_superior": 207.8314601383787,
+      "graus_liberdade": 532,
+      "metodo": "HAC Bartlett; 7 defasagens; correção amostral; t aproximada",
+      "nivel_confianca": 0.95,
+      "significancia": 0.05,
+      "inicio": "2011-01-01",
+      "fim": "2012-06-30",
+      "dias": 547
+    },
+    {
+      "variavel": "temp",
+      "estimativa": 3682.753092337391,
+      "erro_padrao": 748.4541640523688,
+      "estatistica_t": 4.920479127803625,
+      "p_valor": 1.15293968540737e-06,
+      "ic_inferior": 2212.464935714887,
+      "ic_superior": 5153.041248959895,
+      "graus_liberdade": 532,
+      "metodo": "HAC Bartlett; 7 defasagens; correção amostral; t aproximada",
+      "nivel_confianca": 0.95,
+      "significancia": 0.05,
+      "inicio": "2011-01-01",
+      "fim": "2012-06-30",
+      "dias": 547
+    }
+  ],
+  "metrics_recomputed": [
+    {
+      "modelo": "Simples",
+      "mae": 1923.7890938347282,
+      "rmse": 2174.872619247257,
+      "r2": -0.5602859029690923,
+      "inicio": "2012-07-01",
+      "fim": "2012-12-31",
+      "dias": 184,
+      "previsoes_negativas": 0
+    },
+    {
+      "modelo": "Múltiplo",
+      "mae": 1032.2016704556183,
+      "rmse": 1381.6635356332113,
+      "r2": 0.37028922401319475,
+      "inicio": "2012-07-01",
+      "fim": "2012-12-31",
+      "dias": 184,
+      "previsoes_negativas": 0
+    },
+    {
+      "modelo": "Média do treino",
+      "mae": 2452.6403008504894,
+      "rmse": 2694.3024635990487,
+      "r2": -1.3945793319422517,
+      "inicio": "2012-07-01",
+      "fim": "2012-12-31",
+      "dias": 184,
+      "previsoes_negativas": 0
+    }
+  ],
+  "residual_diagnostics": {
+    "durbin_watson": 1.2869088061722842,
+    "acf_1": 0.3534421782511476
+  },
+  "input_sha256": {
+    "dados/brutos/day.csv": "a6bcf826782d3c0fbfdcbeead17cd0884185a0dafe8ff10cd48a874ee7ba18be",
+    "dados/tratados/day_tratado.csv": "1850b1670c187bf6b81cb854db687ecb7c34d931d2025d9c4fc736fb7dcf7524",
+    "resultados/metricas_modelos.csv": "38c5038b56ac5b0f691a9cc85f8f9d59ac21079078001edfe18296f24225e54b",
+    "resultados/previsoes.csv": "58f0f4e604b5a1bb143da4c9b8c0a3adfeb59df9af727bddc7495b2c75a8336d",
+    "resultados/testes_hipoteses.csv": "0fbc0e499481ac06272ece694a8584a18b4501048951c743331979562f8179d5",
+    "notebooks/analise_bicicletas.ipynb": "23fe62997c843ce9b189de29664e626905be7846394969c97f43f7c3f162f52a"
+  },
+  "scope": "Checks internal numerical consistency against supplied raw CSV; does not authenticate raw CSV against original publisher."
+}
